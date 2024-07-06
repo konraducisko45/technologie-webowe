@@ -37,7 +37,6 @@ blockquote {
 
 p {
     margin-top: 20px;
-    font-weight: bold;
 }
 
 .form-section {
@@ -186,7 +185,7 @@ nav {
     }
 
 .skills-bars .progress {
-    background: #f0f0f0;
+    background: #c9c6c6;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
