@@ -122,40 +122,60 @@ header {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.navbar {
+    padding: 15px 0;
 }
 
-    nav .logo img {
-        height: 40px;
+.hero {
+    background-color: #f4f4f4;
+    height: 50vh;
+}
+
+.hero .container {
+    max-width: 1200px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.hero .btn-primary {
+    background-color: #00bfa5;
+    border-color: #00bfa5;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+}
+
+.hero .btn-primary:hover {
+    background-color: #009688;
+    border-color: #009688;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 40px 0;
     }
 
-    nav ul {
-        list-style: none;
-        display: flex;
+    .hero h1 {
+        font-size: 2.5rem;
     }
 
-        nav ul li {
-            margin-left: 20px;
-        }
+    .hero p {
+        font-size: 1rem;
+    }
 
-            nav ul li a {
-                text-decoration: none;
-                color: #333;
-                padding: 5px 10px;
-                border-radius: 5px;
-                transition: background 0.3s;
-            }
-
-                nav ul li a:hover {
-                    background: #eee;
-                }
-
+    .hero .btn-primary {
+        font-size: 1rem;
+    }
+}
 .skills {
     display: flex;
     justify-content: space-between;
@@ -201,22 +221,7 @@ nav {
         left: 0;
     }
 
-.skills-image {
-    width: 50%;
-}
 
-    .skills-image img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-
-.hero {
-    background: url("../img/bg__lead.jpg") no-repeat center center/cover;
-    color: #fff;
-    padding: 100px 20px;
-    text-align: center;
-}
 .our_works .our_works-lead {
     max-width: 620px;
     margin: 95px auto 45px;
@@ -229,24 +234,7 @@ nav {
     
 }
 
-    .hero h1 {
-        font-size: 48px;
-        margin: 0 0 20px;
-    }
-
-    .hero p {
-        font-size: 18px;
-        margin: 0 0 20px;
-    }
-
-    .hero .btn {
-        background: #007bff;
-        color: #fff;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-
+    
     .services {
         padding: 60px 0;
         background-color: #f8f9fa;
